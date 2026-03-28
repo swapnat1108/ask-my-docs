@@ -1,0 +1,572 @@
+[
+  {
+    "text": "aiohappyeyeballs==2.6.1\naiohttp==3.13.3\naiosignal==1.4.0\naltair==6.0.0\nannotated-doc==0.0.4\nannotated-types==0.7.0\nanyio==4.13.0\nappdirs==1.4.4\nattrs==26.1.0\nbcrypt==5.0.0\nblinker==1.9.0\nbuild==1.4.2\ncachetools==7.0.5\ncertifi==2026.2.25\ncharset-normalizer==3.4.6\nchromadb==1.5.5\nclick==8.3.1\ncohere==5.21.1\ndataclasses-json==0.6.7\ndatasets==4.8.4\ndill==0.4.1\ndiskcache==5.6.3\ndistro==1.9.0\ndocstring_parser==0.17.0\ndurationpy==0.10\nfastavro==1.12.1\nfilelock==3.25.2\nflatbuffers==25.12.19\nfrozenlist==1.8.0",
+    "source": "requirements.txt",
+    "page": 0,
+    "start": 0
+  },
+  {
+    "text": "flatbuffers==25.12.19\nfrozenlist==1.8.0\nfsspec==2026.2.0\ngitdb==4.0.12\nGitPython==3.1.46\ngoogleapis-common-protos==1.73.1\ngroq==1.1.2\ngrpcio==1.78.0\nh11==0.16.0\nhf-xet==1.4.2\nhttpcore==1.0.9\nhttptools==0.7.1\nhttpx==0.28.1\nhttpx-sse==0.4.3\nhuggingface_hub==1.8.0\nidna==3.11\nimportlib_metadata==8.7.1\nimportlib_resources==6.5.2\ninstructor==1.14.5\nJinja2==3.1.6\njiter==0.11.1\njoblib==1.5.3\njsonpatch==1.33\njsonpointer==3.1.1\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\nkubernetes==35.0.0",
+    "source": "requirements.txt",
+    "page": 0,
+    "start": 466
+  },
+  {
+    "text": "kubernetes==35.0.0\nlangchain==1.2.13\nlangchain-classic==1.0.3\nlangchain-community==0.4.1\nlangchain-core==1.2.22\nlangchain-openai==1.1.12\nlangchain-text-splitters==1.1.1\nlanggraph==1.1.3\nlanggraph-checkpoint==4.0.1\nlanggraph-prebuilt==1.0.8\nlanggraph-sdk==0.3.12\nlangsmith==0.7.22\nmarkdown-it-py==4.0.0\nMarkupSafe==3.0.3\nmarshmallow==3.26.2\nmdurl==0.1.2\nmmh3==5.2.1\nmpmath==1.3.0\nmultidict==6.7.1\nmultiprocess==0.70.19\nmypy_extensions==1.1.0\nnarwhals==2.18.1\nnest-asyncio==1.6.0\nnetworkx==3.6.1\nnumpy==2.4.3",
+    "source": "requirements.txt",
+    "page": 0,
+    "start": 943
+  },
+  {
+    "text": "nest-asyncio==1.6.0\nnetworkx==3.6.1\nnumpy==2.4.3\noauthlib==3.3.1\nonnxruntime==1.24.4\nopenai==2.30.0\nopentelemetry-api==1.40.0\nopentelemetry-exporter-otlp-proto-common==1.40.0\nopentelemetry-exporter-otlp-proto-grpc==1.40.0\nopentelemetry-proto==1.40.0\nopentelemetry-sdk==1.40.0\nopentelemetry-semantic-conventions==0.61b0\norjson==3.11.7\normsgpack==1.12.2\noverrides==7.7.0\npackaging==26.0\npandas==2.3.3\npillow==12.1.1\npropcache==0.4.1\nprotobuf==6.33.6\npyarrow==23.0.1\npybase64==1.4.3\npydantic==2.12.5",
+    "source": "requirements.txt",
+    "page": 0,
+    "start": 1401
+  },
+  {
+    "text": "pyarrow==23.0.1\npybase64==1.4.3\npydantic==2.12.5\npydantic-settings==2.13.1\npydantic_core==2.41.5\npydeck==0.9.1\nPygments==2.19.2\npypdf==6.9.2\nPyPika==0.51.1\npyproject_hooks==1.2.0\npython-dateutil==2.9.0.post0\npython-dotenv==1.2.2\npytz==2026.1.post1\nPyYAML==6.0.3\nragas==0.4.3\nrank-bm25==0.2.2\nreferencing==0.37.0\nregex==2026.2.28\nrequests==2.33.0\nrequests-oauthlib==2.0.0\nrequests-toolbelt==1.0.0\nrich==14.3.3\nrpds-py==0.30.0\nsafetensors==0.7.0\nscikit-learn==1.8.0\nscikit-network==0.33.5\nscipy==1.17.1",
+    "source": "requirements.txt",
+    "page": 0,
+    "start": 1849
+  },
+  {
+    "text": "scikit-network==0.33.5\nscipy==1.17.1\nsentence-transformers==5.3.0\nshellingham==1.5.4\nsix==1.17.0\nsmmap==5.0.3\nsniffio==1.3.1\nSQLAlchemy==2.0.48\nstreamlit==1.55.0\nsympy==1.14.0\ntenacity==9.1.4\nthreadpoolctl==3.6.0\ntiktoken==0.12.0\ntokenizers==0.22.2\ntoml==0.10.2\ntorch==2.11.0\ntornado==6.5.5\ntqdm==4.67.3\ntransformers==5.4.0\ntyper==0.24.1\ntypes-requests==2.33.0.20260327\ntyping-inspect==0.9.0\ntyping-inspection==0.4.2\ntyping_extensions==4.15.0\ntzdata==2025.3\nurllib3==2.6.3\nuuid_utils==0.14.1\nuvicorn==0.42.0",
+    "source": "requirements.txt",
+    "page": 0,
+    "start": 2313
+  },
+  {
+    "text": "urllib3==2.6.3\nuuid_utils==0.14.1\nuvicorn==0.42.0\nuvloop==0.22.1\nwatchfiles==1.1.1\nwebsocket-client==1.9.0\nwebsockets==16.0\nxxhash==3.6.0\nyarl==1.23.0\nzipp==3.23.0\nzstandard==0.25.0",
+    "source": "requirements.txt",
+    "page": 0,
+    "start": 2771
+  },
+  {
+    "text": "1  \nPrivileged & Strictly Confidential \n \nU N I VER  SI T Y F EES  LI T I G A T I O N \n \n \nSummary Document \n \n \nThis document is intended to be used as a \nsummary of the claims we are proposing to bring \nand of the no -win, no-fee terms on which we are \nproposing to act.  It does not replace or change \nthe terms of the agreements you will need to enter \ninto with us in order for us to act for you.  You \nshould read and consider those agreements \ncarefully before deciding to join the claim.",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 0
+  },
+  {
+    "text": "carefully before deciding to join the claim. \nThis document is strictly confidential and \nprivileged. It should only be read by people who \nare genuinely considering instructing Harcus \nParker Limited and Asserson Law Offices \n(referred jointly throughout this summary as \u2018us\u2019 or \n\u2018we\u2019 or the \u2018Solicitors\u2019) in the University Fees \nLitigation. \nThe claims \n1. We are bringing claims on behalf of current \nand former students of universities and other \nhigher education institutions in respect of t he",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 451
+  },
+  {
+    "text": "higher education institutions in respect of t he \ndisruption to their studies and course or \ncourses related to industrial action from 2018 \nonwards and/or the responses of their \neducational institutions to Covid-19 from 2020 \nonwards (the \u2018 University Fees Litigation\u2019). \n2. The claims will comprise different legal causes \nof action, which could include: \na. Breaches of contract by a \nuniversity/higher education \ninstitution; and/or \nb. Breaches of consumer protection",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 902
+  },
+  {
+    "text": "b. Breaches of consumer protection \nlaws by a university/higher education \ninstitution \nBecause you have been charged significant \nfees by the university or by another institution \nin exchange for teaching and other services \nbut a portion of what you paid for has simply \nnot been provided to you or has been \nprovided to you in a form substantially \ndifferent from what you bargained for. \n3. We shall seek  financial compensation \n(damages) from the university on your behalf.",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 1341
+  },
+  {
+    "text": "(damages) from the university on your behalf. \nThe terms on which we would act for you \n4. Everybody who instructs us to act for them in \nthe claims must agree to an Authority \nDocument and to our Engagement Letter, \nwhich includes a number  of important \nschedules. These are: \na. a damages-based agreement (which \nyou will often see shortened to \u2018DBA\u2019); \nb. a litigation management agreement (or \n\u2018LMA\u2019); and \nc. The firms\u2019 privacy notice. \n5. In summary, these documents create a no-win,",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 1775
+  },
+  {
+    "text": "5. In summary, these documents create a no-win, \nno-fee relationship between us and you, under \nwhich we agree to act for you in your claim in \nreturn for a percentage of any damages you \nreceive. We also agree to pay up front all of \nthe expenses associated with the case on your \nbehalf. \nThe damages-based agreement \n6. The DBA governs the way in which we will be \npaid for the work that we do on your behalf. \nWe will be paid 35% (inclusive of any \napplicable VAT) of any damages, settlement",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 2218
+  },
+  {
+    "text": "applicable VAT) of any damages, settlement \nmonies, or benefit in kind you receive \n(although this should be reduced by any \nsolicitors\u2019 and  barristers\u2019 fees we are able to \nclaim back from the defendant). \n7. The DBA also provides that we will pay on your \nbehalf expenses required to bring the claim  \n(for example, the fees of experts or court fees). \nYou will only be liable to pay us that money if \nwe are able to recover it from the defendant. It \nis an additional amount to the 35% mentioned",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 2671
+  },
+  {
+    "text": "is an additional amount to the 35% mentioned \nin paragraph 6 above. \n8. If your claim succeeds and you pay a fee to us, \nHarcus Parker Limited and Asserson  Law \nOffices will split that fee equally, and also \nshare it with any third -party funders and \ninsurers who support the claims. \nThe LMA and Authority Document \n9. The LMA sets out how the claim will be run: it \ndeals with things like the way confidential \ninformation can be shared between the \nclaimants; the establishment of a",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 3126
+  },
+  {
+    "text": "claimants; the establishment of a \nrepresentative committee of claimants who will \ngive us day -to-day instructions on the claim \n(the \u2018 Committee\u2019); the way costs will be \nshared between you and the other claimants; \nand the  way that the hypothetical risk of \nadverse costs is shared between you and the \nother claimants. \n10. The Committee is an important feature of the \nway in which these claims are run:  it is made \nup of members of the claimant group  who are",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 3580
+  },
+  {
+    "text": "up of members of the claimant group  who are \ninterested and wish to be more engaged in the \nlitigation process. If you are interested in \njoining the Committee, please write to \ninfo@studentgroupclaim.co.uk, after you \nhave registered as a",
+    "source": "Information-Sheet2.pdf",
+    "page": 0,
+    "start": 4003
+  },
+  {
+    "text": "Confidential & Privileged \n2 \n \n \n \n \nclaimant. Through the LMA and the Authority \nDocument, you agree that the Committee can \ntake certain decisions in relation to your claim \non your behalf. Importantly, this includes \ndecisions as to settlement of your claim out-of- \ncourt. The Committee is necessary in claims of \nthis sort so that we are able to take instructions \nquickly and efficiently from a large group of \nindividual claimants. \nOther matters \n11. In addition, Harcus Parker Limited and",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 0
+  },
+  {
+    "text": "11. In addition, Harcus Parker Limited and \nAsserson Law Offices have agreed to \ncooperate with each other pursuant to the \nterms of a cooperation agreement. The firms \nrecognise that it is in the best interests of their \nclients for them to cooperate in relation to the \nproceedings and have agreed to sh are the \nwork required to bring the claims. This does \nnot affect or change the no -win, no -fee \nrelationship between you and the firms as \noutlined above.",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 456
+  },
+  {
+    "text": "outlined above. \n12. If the Committee instructs us to do so, we may \nestablish a joint committee of claimants from \nother claimant groups pursuing similar or \nrelated claims so that decisions in respect of \nstrategy can be made on a basis that ensures \nthe smooth running of the  claims. The  LMA \nalso provides that certain costs which will be \ncommon to groups of claimants will be shared. \nThis should mean cost-savings overall, and will \nallow us to bring the claims more efficiently. \nCost sharing",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 903
+  },
+  {
+    "text": "Cost sharing \n13. The LMA governs the way costs are shared \nbetween you and the other claimants, and \nbetween you, and if necessary or appropriate, \nclaimants wi th similar claims against \ndefendants other than  your university . \nAlthough our fee will be calculated by \nreference to the amount of damages  you \nreceive, it is important \u2013 at least notionally \u2013 \nfor us to divide between all the claimants the \ncosts we incur on your behalf. This is so that \nat the conclusion of the  case, if your claims",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 1393
+  },
+  {
+    "text": "at the conclusion of the  case, if your claims \nsucceed, you are able to recover some  of \nyour costs from the defendant (this is because \na court will only award costs to claimants \nwhere they have in fact incurred  costs, or a \ncosts liability). \n14. Your hypothetical share of the costs will be \ncalculated by reference to the damages value \nof your claim. This way each claimant is liable \nonly for his or her pro rata share of the total \namount of costs. \nRisks, indemnity and insurance",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 1851
+  },
+  {
+    "text": "amount of costs. \nRisks, indemnity and insurance \n15. Claimants who become involved in a court \ncase put themselves at risk of being ordered, \n \nor having to agree, to pay the defendant\u2019s \ncosts if they lose their claim or a court \napplication. \n16. In your case, we have arranged with a litigation \nfunder for  it to pay for adverse costs orders \nthat could be made against you at an early \nstage of your case. This indemnity is up to a \nfinancial limit that is spread across various",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 2294
+  },
+  {
+    "text": "financial limit that is spread across various \ncases against universities. Please do contact \nus on info@studentgroupclaim.co.uk if y ou \nwould like more details. We shall keep your \nCommittee advised and apprised of the \nsituation in relation to adverse costs cover for \nyou, including before we take any steps that \ncould expose you to having to pay adverse \ncosts. It is also possible that aft er the event \n(\u2018ATE\u2019) insurance may need to be sought at \nsome stage in your case to cover you in",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 2733
+  },
+  {
+    "text": "some stage in your case to cover you in \nrelation to future adverse costs orders against \nyou, although again we will inform you of the \nsituation in this regard before it could arise. We \nwould only act on your instructions in relation \nto the above, through your Committee. \n17. In addition, we will seek an order from the court \nwhich will ensure that the risk will be shared \nproportionately between the claimants, based \nupon their percentage share of the overall",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 3188
+  },
+  {
+    "text": "upon their percentage share of the overall \ndamages being claimed. This means that if the \ncase is unsuccessful, and there was an \ninsufficient indemnity in place, your liability will \nbe limited to your proportionate share of the \ndefendants\u2019 costs. \n18. It is our duty to minimise  the risk to you as far \nas possible. The indemnity should mean that \nthe risk will be negligible. \n19. Nevertheless, there are some remaining risks. \nWe describe the main risks and what we will \ndo to mitigate them here.",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 3614
+  },
+  {
+    "text": "do to mitigate them here. \nInsufficient indemnity \n20. The court\u2019s case man agement processes \nmean that it is likely that the defendant will be \nobliged to update us regularly about its costs,",
+    "source": "Information-Sheet2.pdf",
+    "page": 1,
+    "start": 4093
+  },
+  {
+    "text": "Confidential & Privileged \n3 \n \n \n \n \nwhich will increase as the case progresses, so \nthat we can take steps to ensure that the \nindemnity covering you is sufficient, and if it is \nbacked by an insurance policy and limited to \nthat amount, that such insurance is sufficient. \nHowever, if notwithstanding those protections \nthe indemnity is insufficient to meet the \nadverse costs you are re quired to pay, you \nwould be liable for the sum not covered by the \nindemnity. This is very unlikely to be the case.",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 0
+  },
+  {
+    "text": "indemnity. This is very unlikely to be the case. \nThe group does not attract enough claimants \n21. There is also a further risk: that the case is \nsuccessful but any recoveries for the claimants \nare limited. \n22. The terms of the DBA are such that we cannot \ntake more than 35% of any damages you  \nreceive, but if too few claimants instruct us, so \nas to make the case not economically viable, \nwe may have to terminate our retainer with \nyou. This is unlikely, and we would consult the",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 459
+  },
+  {
+    "text": "you. This is unlikely, and we would consult the \nCommittee before doing so in order to make \nsure the group could continue to be \nadequately represented, if at all possible. You \nwould not be charged by us if we had to \nterminate your retainer for this reason. \nOur advice on risk \n23. It is our advice to potential claimants that the \nrisk of personal liability falling on any  claimant \nis extremely low. \nYour responsibilities \n24. As a claimant, you will be a party to formal legal",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 900
+  },
+  {
+    "text": "proceedings. You must respond quickly and \nfully to any questions we ask you which relate \nto your claim. \n25. We will use the information that you provide to \nus as the basis of your claim. This will involve \nus making representations to the defendant \nand signing statements of truth on your behalf. \nIt is essential that what we say  is true. If the \ncontents of a statement of truth are not true \ncontempt of court proceedings can be brought \nagainst you and us.",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 1387
+  },
+  {
+    "text": "against you and us. \n26. You will also have a duty to disclose (that is, \ntell the other side about and provide copies of) \ndocuments which might be relevant to your \nclaim regardless of whether they are harmful \nor helpful to your own case. This means that \nwhilst you are a claimant you must keep such \ndocuments safe, and be prepared to produce \nthem if required. \nInformation sharing \n27. Confidential Information includes any \ninformation and documents provided by a",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 1834
+  },
+  {
+    "text": "information and documents provided by a \nclaimant to the firms for the purposes of the \n \nClaim save insofar as it is already in the public \ndomain or requires to be disclosed to the court \nand the defendant or otherwise made public \nfor the purposes of the Claim. \n28. Under the LMA you agree that the firms can \nshare this information on a common interest \nbasis with other claimants and any third-party \nfunder who provides litigation funding for the \nclaims and the Committee. You also agree",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 2266
+  },
+  {
+    "text": "claims and the Committee. You also agree \nthat Confidential Information can be used by \nthe firms in the proceedings in so far as the \nfirms consider it necessary or helpful to \ncompare the facts of individual claims for the \npurposes of advising on and conducting the \ncommon aspects of the claimants\u2019 claims and \nthe claims of other clients of the firms with \nsimilar claims. In all cases Confidential \nInformation will be shared on terms of mutual \nconfidentiality and without any waiver of \nprivilege.",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 2721
+  },
+  {
+    "text": "privilege. \nAlternative arrangements \n29. You may have legal insurance whic h would \npay your legal costs, typically as part of the \nhousehold insurance policy. This is known as \n\u2018Before The Event\u2019 (\u2018 BTE\u2019) insurance. We \nregret that unfortunately you will not be able to \nuse your BTE insurance for this claim; that is \nmainly because we do not think that it will be \neconomically viable to assist claimants with \nindividual insurance claims. \n30. Other law firms might be prepared to act for",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 3216
+  },
+  {
+    "text": "30. Other law firms might be prepared to act for \nyou in claims like these on a similar basis. We \nbelieve that the arrangements we have put in \nplace are fair and in your best interests.  It is \nlikely that a significant proportion of the claims \nwill go to trial, and we have sought  to create a \nstructure in which we can run that litigation in a \nway that is economically viable for us and for \nyou. \nCancellation \n31. If you change your mind after signing up, you",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 3661
+  },
+  {
+    "text": "can cancel within 14 days without any reason. \nTo do so, please contact Harcus Parker and \nAsserson by email at: \ninfo@studentgroupclaim.co.uk. We will email  \na cancellation form to you once you have \ncompleted the registration process. You may \nuse this form to cancel, but you do not have to. \nOur engagement with you is governed by the \nConsumer Contracts (Information, \nCancellation and Additional Charges) \nRegulations 2013.",
+    "source": "Information-Sheet2.pdf",
+    "page": 2,
+    "start": 4131
+  },
+  {
+    "text": "tht \n \n \nCentral Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL \nTelephone +44 (0) 20 3995 3900 \ninfo@harcusparker.co.uk  \nwww.harcusparker.co.uk \n \nStrictly confidential \nSubject to legal professional and litigation privilege \n \n A U T H O R I T Y  D O C U M E N T  \u2013  S T U D E N T  G R O U P  C L A I M \n \n_______________________________________ \nAuthority Document",
+    "source": "Information-Sheet2.pdf",
+    "page": 3,
+    "start": 0
+  },
+  {
+    "text": "Authority Document \n_______________________________________ \n \nThis is an authority document, which authorises Harcus Parker Limited and Asserson Law \nOffices to pursue the claim on my behalf. It also related to the following agreements: \n(A) The engagement letter from Harcus Parker Limited and Asserson Law Offices (together, \nthe \u2018Solicitors\u2019) (the \u2018Engagement Letter\u2019);  \n(B) The damages-based agreement (the \u2018DBA\u2019) between you and the Solicitors; and",
+    "source": "Information-Sheet2.pdf",
+    "page": 3,
+    "start": 475
+  },
+  {
+    "text": "(C) The litigation management agreement  (the \u2018 LMA\u2019) between you, each of the other \nclaimants in your group claim, and the Solicitors. \nWe are also making a summary document available to you here. \nYou confirm and agree that: \n1. You have read in full and agree to the terms of each of the Engagement Letter, the DBA \nand the LMA; \n2. You are instructing Harcus Parker Limited and Asserson Law Offices to act as your \nsolicitors for the purpose of your claim against your university;",
+    "source": "Information-Sheet2.pdf",
+    "page": 3,
+    "start": 932
+  },
+  {
+    "text": "3. We have informed you that o ur postal addresses are Harcus Parker Limited at 7th \nFloor, Melbourne House, 44 -46 Aldwych, London, WC2B 4LL  and Asserson Law \nOffices at Central Court, 25 Southampton Buildings, Holborn, London, WC2A 1AL, as \nwell as Churchill House, 137-139 Brent Street, London, NW4 4DJ, and 1 Azrieli Centre, \nRound Tower, 32nd Floor, 132 Menachem Begin, Tel Aviv 6701101 . Both la w firms \ncan however be contacted via email address info@studentgroupclaim.co.uk, which is",
+    "source": "Information-Sheet2.pdf",
+    "page": 3,
+    "start": 1420
+  },
+  {
+    "text": "probably the easiest and most efficient way of communicating with us;  \n4. We will provide you with legal services (and services incidental to legal services) as \nset out in the Engagement Letter, DBA and LMA referenced directly above; \n5. Our aim is to obtain compensation from your university on your behalf. As explained \nin the Engagement Letter, DBA, and LMA, the payment from you for our legal services \nwill be made from any out-of-court settlement or judgment we achieve  from the \ndefendant for you;",
+    "source": "Information-Sheet2.pdf",
+    "page": 3,
+    "start": 1915
+  },
+  {
+    "text": "defendant for you;  \n6. The litigation is of indeterminate duration. Your contract with us will terminate after your \nlitigation concludes by way of a win or loss at court, or by achieving an out -of-court \nsettlement, and after all legal services fees and expenses have been paid. If your case \nis contested by your university, the litigation is likely to last at l east two years but the",
+    "source": "Information-Sheet2.pdf",
+    "page": 3,
+    "start": 2405
+  },
+  {
+    "text": "tht \n \n \nCentral Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL \nTelephone +44 (0) 20 3995 3900 \ninfo@harcusparker.co.uk  \nwww.harcusparker.co.uk \n \ntimetable is at the discretion of the Court . It is also dependent on the conduct of the \nparties; \n7. It is impossible for us to predict accurately what cost will be attributable for which month",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 0
+  },
+  {
+    "text": "during which the litigation will carry on.  In addition, th e nature of the case, where \ncompensation rates are still to be decided,  is such that the specific price of our legal \nservices cannot be calculated in advance;  \n8. The fee we will charge you is conditional on our achieving a settlement or a judg ment \nin your favour. Our fee for our legal services will be, and cannot be more than , 35% \n(inclusive of VAT) of any damages (ie, compensation) , settlement monies, and the",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 471
+  },
+  {
+    "text": "market value of benefits in kind you receive from your university. This fee can however \nbe reduced by solicitors\u2019 and barristers\u2019 fees we are able to claim back from your \nuniversity as part of a settlement or a court award . The way in which the fee for our \nlegal services is calculated is set out fully in the DBA;  \n9. We will also pay on your behalf expenses required to pursue your claim (for example, \nthe fees of experts and court fees). You will be liable to repay those expenses to us,",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 956
+  },
+  {
+    "text": "but only if and to the extent that you are reimbursed your expenses by your university. \nReimbursement of those expenses is an additional amount to the payment referred to \nin paragraph 8 above. It should not leave you out of pocket because of the fact that \nexpenses are only repayable to us if your university repays them to you first; \n10. The only fees and expenses payable by you to us are those set out in your \nEngagement Letter and the DBA. You must read those documents carefully before",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 1454
+  },
+  {
+    "text": "agreeing to this Authority Document. There will be no additional legal services fees or \nexpenses payable by you to us; \n11. You are giving to the Claimant Committee an irrevocable delegation of authority to \nconduct the litigation on your behalf. You may with their permission nevertheless \ndiscontinue your claim. The cost consequences of doing so are detailed in our \ncomplete info rmation sheet related to the Consumer Contracts (Information,",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 1951
+  },
+  {
+    "text": "Cancellation and Additional Charges) Regulations 2013 available here; \n12. As a Claimant in litigation, you have duties to the Court which will subsist for as long \nas you are participating in the claim. You have also agreed through the LMA that you \nwill continue to respect the confidentiality of the LMA and its terms; \n13. You may cancel your agreement with us within 14 days of the date of acceptance of \nour terms without giving any reason. If you wish to cancel, it is probably easiest if you",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 2399
+  },
+  {
+    "text": "notify us in an email sent to info@studentgroupclaim.co.uk, although that method of \ncommunicating with us is not obligatory; \n14. If you cancel your agreement with us wit hin 14 days of the date of acceptance of our \nterms, we will not charge you anything. However, if during that period you have \ninstructed us to issue a claim form at Court on your behalf, then there may be costs \nconsequences of cancelling your agreement with  us (and discontinuing your claim at",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 2900
+  },
+  {
+    "text": "Court). This is unlikely to occur, but we will discuss the consequences in detail with \nyou if it does; \n15. We are making complete information related to the Consumer Contracts (Information, \nCancellation and Additional Charges) Regulations 2013 available to you here. This will \nalso be confirmed to you via email;",
+    "source": "Information-Sheet2.pdf",
+    "page": 4,
+    "start": 3370
+  },
+  {
+    "text": "tht \n \n \nCentral Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL \nTelephone +44 (0) 20 3995 3900 \ninfo@harcusparker.co.uk  \nwww.harcusparker.co.uk \n \n16. You understand the implications of becoming a claimant in High Court litigation, \nincluding that there are risks to such litigation, and that by becoming a claimant you",
+    "source": "Information-Sheet2.pdf",
+    "page": 5,
+    "start": 0
+  },
+  {
+    "text": "are taking on certain obligations to the Court, to the Solicitors and to your fellow \nclaimants; \n17. You understand that you have a duty to search for and to disclose documents that are \nrelevant to your claim. You agree not to destroy any documents which are or might be \nrelevant to your claim; \n18. A director of Harcus Parker Limited or a partner of Asserson Law Offices may sign a \nstatement of truth in respect of a claim form and particulars of claim based on the",
+    "source": "Information-Sheet2.pdf",
+    "page": 5,
+    "start": 448
+  },
+  {
+    "text": "information you provide. You also authorise such a director or partner to sign a \nstatement of truth in respect of any amendments or re-amendments to any claim form \nand/or particulars of claim and in respect of any reply to a defence your legal team \nmay advise is appropriate for the claimants to serve; \n19. The Solicitors may check your identity electronically; \n20. The Solicitors may req uest documents from third parties on your behalf to help with",
+    "source": "Information-Sheet2.pdf",
+    "page": 5,
+    "start": 921
+  },
+  {
+    "text": "the case, including by making data subject access requests; \n21. The Solicitors or the committee established by the LMA (the \u2018 Committee\u2019) may \nexecute on your behalf a policy or policies of \u2018After the  Event\u2019 (or \u2018 ATE\u2019) insurance \nand/or an indemnity or indemnities intended to protect against the risk of the claimants \nbeing required to pay the defendant\u2019s legal costs if, for example, the claims fail; \n22. The Solicitors or the Committee may enter into agreeme nts with third parties through",
+    "source": "Information-Sheet2.pdf",
+    "page": 5,
+    "start": 1378
+  },
+  {
+    "text": "which the Solicitors agree to share all or part of the fee due to them under the DBA; \n23. The Solicitors, at their absolute discretion, may appoint no more tha n five individual \nclaimants to act as the Committee, in accordance with the terms of the LMA. The \nCommittee shall act as your agents in relation to your claim, and shall be permitted to: \n(1) execute and approve policies of ATE insurance and/or indemnities from  the \nSolicitors or the Funder on your behalf;",
+    "source": "Information-Sheet2.pdf",
+    "page": 5,
+    "start": 1877
+  },
+  {
+    "text": "Solicitors or the Funder on your behalf; \n(2) execute and approve funding agreements with third -party litigation funders \nincluding the Funder on your behalf; \n(3) execute a replacement DBA on your behalf; \n(4) execute documents which create alternative funding arran gements with the \nSolicitors for your claim and for the litigation generally, provided the terms of \nany such arrangements are no less favourable to you than the DBA;",
+    "source": "Information-Sheet2.pdf",
+    "page": 5,
+    "start": 2308
+  },
+  {
+    "text": "(5) give instructions to the Solicitors in relation to the conduct of the litigation, \nincluding without limitation: \ni) discontinuance by all claimants, or any one of them (including your \nclaim); \nii) the entry into and conduct of settlement negotiations; \niii) the acceptance and making of offers to settle (including for the \navoidance of doubt the acceptance and making of offers to settle that \nmay have the effect of distributing the settlement proceeds pro rata);",
+    "source": "Information-Sheet2.pdf",
+    "page": 5,
+    "start": 2745
+  },
+  {
+    "text": "tht \n \n \nCentral Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL \nTelephone +44 (0) 20 3995 3900 \ninfo@harcusparker.co.uk  \nwww.harcusparker.co.uk \n \niv) the instruction of counsel, experts and the incurring of any other third \nparty liability that the Solicitors advise is necessary or expedient for \nthe conduct of the litigation; and \nv) strategy generally; as well as",
+    "source": "Information-Sheet2.pdf",
+    "page": 6,
+    "start": 0
+  },
+  {
+    "text": "v) strategy generally; as well as \n(6) do any ancillary necessary act and execute any ancillary necessary document, \nwhich the Solicitors advise is for the benefit of the litigation; \n24. You agree to ratify and to confirm anything the Commit tee does or executes on your \nbehalf in the proper execution of its role in relation to your claim; \n25. In the event that a Committee is not formed, the Solicitors can act as the Committee.",
+    "source": "Information-Sheet2.pdf",
+    "page": 6,
+    "start": 462
+  },
+  {
+    "text": "In such a situation, references to the Committee in this document shoul d be read as \nreferences to the Solicitors; \n26. Complaints about Harcus Parker Limited should be made in the first instance to \nManaging Partner Damon Parker. Complaints about Asserson Law Offices should be \nmade in the first instance to Senior Partner Trevor Asserson. If you are not happy with \nthe response you receive, you may apply to the Solicitors\u2019 Regulation Authority (see:",
+    "source": "Information-Sheet2.pdf",
+    "page": 6,
+    "start": 897
+  },
+  {
+    "text": "https://www.sra.org.uk/ for more information) or the Legal Ombudsman (see: \nwww.legalombudsman.org.uk/); \n27. Harcus Parker Limited and Asse rson Law Offices are regulated by the Solicitors\u2019 \nRegulation Authority. Information about the professional rules governing the conduct \nof solicitors can be found at https://www.sra.org.uk/; \n28. We will keep you regularly updated as to the progress of the litig ation and it will be",
+    "source": "Information-Sheet2.pdf",
+    "page": 6,
+    "start": 1354
+  },
+  {
+    "text": "necessary for you to be in touch with us from time to time in order to fulfil your duties \nas a Claimant in the litigation. \nYou may cancel your agreement with us within 14 days without any reason.  To do so, \nplease contact Harcus Parker and Asserson (ideally by email at:  \ninfo@studengroupclaim.co.uk) and we will email a cancellation form to you. A \ncancellation form can also be found here. This agreement is governed by the Consumer",
+    "source": "Information-Sheet2.pdf",
+    "page": 6,
+    "start": 1781
+  },
+  {
+    "text": "Contracts (Information, Cancellation and Additional Charges) Regulations 2013.",
+    "source": "Information-Sheet2.pdf",
+    "page": 6,
+    "start": 2221
+  },
+  {
+    "text": "Central Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL \nTelephone +44 (0) 20 3995 3900 \ninfo@harcusparker.co.uk  \nwww.harcusparker.co.uk \n \nStrictly confidential \nSubject to legal professional and litigation privilege \n \n \nSchedule: Information Regarding t he Consumer Contracts (Information, Cancellation and \nAdditional Charges) Regulations 2013 (the \u2018Regulations\u2019)",
+    "source": "Information-Sheet2.pdf",
+    "page": 7,
+    "start": 0
+  },
+  {
+    "text": "This Schedule sets out the information contained in Schedule 2 to the Regulations. \n \na. the main characteristics of the goods, services or digital content to the extent appropriate to the \nmedium of communication and to the goods, services or digital content; \n \nThe services  that Harcus Parker Limited and Ass erson Law Offices are providing to you are legal \nservices in relation to group litigation against your university, as described on the case website and in",
+    "source": "Information-Sheet2.pdf",
+    "page": 7,
+    "start": 497
+  },
+  {
+    "text": "the Engagement Letter, as well as its enclosures. We are not providing any goods or digital content. \n \nb. the identity of the trader (such as the trader\u2019s trading name);  \n \nYour retainer is with Harcus Parker Limited and Asserson Law Offices.  \n \nWe will also retain on your behalf other professionals such as barristers and, as appropriate, experts to \nhelp with the claim.  \n \nc. the geographical address at which the trader is esta blished and, where available, the trader\u2019s",
+    "source": "Information-Sheet2.pdf",
+    "page": 7,
+    "start": 967
+  },
+  {
+    "text": "telephone number, fax number and e-mail address, to enable the consumer to contact the trader quickly \nand communicate efficiently;  \n \n- Harcus Parker Limited is at 7th Floor, Melbourne House, 44-46 Aldwych, London, WC2B 4LL \n- Asserson Law Offices is at Central Court, 25 Southampton Buildings, London WC2A 1AL \n \nIt is important to the efficiency of how we run the claim that we attempt to limit the cost of dealing with",
+    "source": "Information-Sheet2.pdf",
+    "page": 7,
+    "start": 1448
+  },
+  {
+    "text": "individual queries. We ask you to direct any queries that arise to info@studentgroupclaim.co.uk. \n \nd. where the trader is acting on behalf of another trader, the geographical address and identity of that \nother trader;  \n \nn/a \n \ne. if different from the address provided in accordance with paragraph (c), the geographical address \nof the place of business of the trader, and, where the trader acts on behalf of another trader, the",
+    "source": "Information-Sheet2.pdf",
+    "page": 7,
+    "start": 1873
+  },
+  {
+    "text": "geographical address of the place of business of that other trader, where the consumer can address any \ncomplaints;  \n \nn/a for Harcus Parker Limited.",
+    "source": "Information-Sheet2.pdf",
+    "page": 7,
+    "start": 2307
+  },
+  {
+    "text": "Central Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL\nTelephone +44 (0) 20 3995 3900\ninfo@harcusparker.co.uk\nwww.harcusparker.co.uk\nAsserson Law Offices\u2019 place of business is in Tel Aviv, at 1 Azrieli Centre, Round Tower, 32nd Floor, \n132 Menachem Begin, Tel Aviv 6701101. \nf. the total price of the goods, services or digital content inclusive of taxes, or where the nature of the",
+    "source": "Information-Sheet2.pdf",
+    "page": 8,
+    "start": 0
+  },
+  {
+    "text": "goods, services or digital content is such that the price cannot reasonably be calculated in advance, the \nmanner in which the price is to be calculated;  \nThe nature of the services is such that the price cannot reasonably be calculated in advance. We have \nexplained that our fee for our legal services will be, and cannot be more than, 35% (inclusive of VAT) \nof any damages (ie, compensation), settlement monie s, and the market value of benefits in kind you",
+    "source": "Information-Sheet2.pdf",
+    "page": 8,
+    "start": 508
+  },
+  {
+    "text": "receive from your university. This fee can however be reduced by solicitors\u2019 and barristers\u2019 fees we are \nable to claim back from your university as part of a settlement or a court award. The way in which the \nfee for our legal services is calculated is set out fully in the DBA. \ng. where applicable, all additional delivery charges and any other costs or, where those charges cannot\nreasonably be calculated in advance, the fact that such additional charges may be payable;",
+    "source": "Information-Sheet2.pdf",
+    "page": 8,
+    "start": 972
+  },
+  {
+    "text": "We will also pay on your behalf expenses required to pursue your claim (for example, the fees of \nexperts and court fees). You will be liable to repay those expenses to us, but only if and to the extent \nthat you are reimbursed your expenses by your university. Reimbursement of those expenses is an \nadditional amount to the payment referred to above. It should not leave you out of pocket because of \nthe fact that expenses are only repayable to us if your university repays them to you first.",
+    "source": "Information-Sheet2.pdf",
+    "page": 8,
+    "start": 1449
+  },
+  {
+    "text": "h. in the case of a contract of indeterminate duration or a contract containing a subscription, the totalcosts per \nbilling period or (where such contracts are charged at a fixed rate) the total monthly costs; \nThe litigation is of indeterminate duration. It is not possible for us to predict accurately what cost will \nbe attributable for which month during which the litigation will carry on. Because, however, the costs",
+    "source": "Information-Sheet2.pdf",
+    "page": 8,
+    "start": 1946
+  },
+  {
+    "text": "are conditional on success, we can say that there will be no month prior to the conclusion of the litigation \nin which you will be called on to make a payment to us.  \ni. the cost of using the means of distance communication for the conclusion of the contract where that\ncost is calculated other than at the basic rate; \nn/a \nj. the arrangements for payment, delivery, performance, and the time by which the trader undertakes to\ndeliver the goods, to perform the services or to supply the digital content;",
+    "source": "Information-Sheet2.pdf",
+    "page": 8,
+    "start": 2370
+  },
+  {
+    "text": "As explained in the LMA, DBA, and the Engagement Letter, the arrangements for payment will be \nmade from any settlement or judgment we achieve. \nWe are able to give no undertaking as to how long it may take to conclude the litigation. If it is contested, \nthe litigation is likely to last at least two years but the timetable is at the discretion of the Court and also \nis dependent on the conduct of the parties.",
+    "source": "Information-Sheet2.pdf",
+    "page": 8,
+    "start": 2877
+  },
+  {
+    "text": "Central Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL\nTelephone +44 (0) 20 3995 3900\ninfo@harcusparker.co.uk\nwww.harcusparker.co.uk\nk. where applicable, the trader\u2019s complaint handling policy;\nComplaints about Harcus Parker Limited should be made in the first place to Damon Parker. \nComplaints about Asserson Law Offices should be made in the first instance to Trevor Asserson. See",
+    "source": "Information-Sheet2.pdf",
+    "page": 9,
+    "start": 0
+  },
+  {
+    "text": "our engagement letter to you for more details about complaints.\nl. where a right to cancel exists, the conditions, time limit and procedures for exercising that right inaccordance \nwith regulations 27 to 38; \nYou may cancel your agreement with us within 14 days of the date of acceptance of our terms without \ngiving any reason. If you wish to cancel,  the easiest way to do this is probably by sending a clearly \nworded email to info@studentgroupclaim.co.uk.",
+    "source": "Information-Sheet2.pdf",
+    "page": 9,
+    "start": 510
+  },
+  {
+    "text": "worded email to info@studentgroupclaim.co.uk.  \nm. where applicable, that the consumer will have to bear the cost of returning the goods in case of\ncancellation and, for distance contracts, if the goods, by their nature, cannot normally be returned by \npost, the cost of returning the goods; \nn/a \nn. that, if the consumer exercises the right to cancel after having made a request in accordance with\nregulation 36(1), the consumer is to be liable to pay the trader reasonable costs in accordance with",
+    "source": "Information-Sheet2.pdf",
+    "page": 9,
+    "start": 924
+  },
+  {
+    "text": "regulation 36(4); \nIf you cancel your agreement with us within 14 days of the date of acceptance of our terms, we will not \ncharge you anything. However, if during that period you have instructed us to issue a claim form at \nCourt on your behalf, then there may be costs consequences of cancelling your agreement with us (and \ndiscontinuing your claim at Court). This is unlikely to occur, but we will discuss the consequences in \ndetail with you if it does.",
+    "source": "Information-Sheet2.pdf",
+    "page": 9,
+    "start": 1426
+  },
+  {
+    "text": "detail with you if it does. \no. where under regulation 28, 36 or 37 there is no right to cancel or the right to cancel may be lost, the\ninformation that the consumer will not benefit from a right to cancel, or the circumstances under which \nthe consumer loses the right to cancel;  \nn/a but see above. \np. in the case of a sales contract, a reminder that the trader is under a legal duty  to supply goods that\nare in conformity with the contract; \nn/a",
+    "source": "Information-Sheet2.pdf",
+    "page": 9,
+    "start": 1857
+  },
+  {
+    "text": "are in conformity with the contract; \nn/a \nq. where applicable, the existence and the conditions of after -sale customer assistance, aftersales\nservices and commercial guarantees; \nn/a \u2013 but we will keep you regularly updated as to the progress of the litigation and it will be necessary \nfor you to be in touch with us from time to time in order to fulfil your duties as a Claimant in the \nlitigation.",
+    "source": "Information-Sheet2.pdf",
+    "page": 9,
+    "start": 2267
+  },
+  {
+    "text": "Central Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL \nTelephone +44 (0) 20 3995 3900 \ninfo@harcusparker.co.uk  \nwww.harcusparker.co.uk \n \nr. the existence of relevant codes of conduct, as defined in regulation 5(3)(b) of the Consumer Protection \nfrom Unfair Trading Regulations 2008, and how copies of them can be obtained, where applicable;",
+    "source": "Information-Sheet2.pdf",
+    "page": 10,
+    "start": 0
+  },
+  {
+    "text": "Harcus Parker Limited and Asserson Law Offices are regulated by the Solicitors\u2019 Regulation Authority. \nInformation about the professional rules governing the conduct of solicitors may be found at \nhttps://www.sra.org.uk/. \n \ns. the duration of the contract, where applicable, or, if the contract is of indeterminate duration or is to \nbe extended automatically, the conditions for terminating the contract;  \n \nYou have given to the Claimant Committee an irrevocable delegation of authority to conduct the",
+    "source": "Information-Sheet2.pdf",
+    "page": 10,
+    "start": 472
+  },
+  {
+    "text": "litigation on your behalf. You may with their permission nevertheless discontinue your claim but your \nattention has been drawn at (n) and in the LMA and DBA to the cost consequences of doing so. \n \nt. where applicable, the minimum duration of the consumer\u2019s obligations under the contract;  \n \nAs a Claimant in liti gation, you have duties to the Court which will subsist for as long as you are \nparticipating in the Claim.",
+    "source": "Information-Sheet2.pdf",
+    "page": 10,
+    "start": 979
+  },
+  {
+    "text": "participating in the Claim. \n \nYou have also agreed through the LMA that you will continue to respect the confidentiality of the LMA \nand its terms.  \n \nu. where applicable, the exis tence and the conditions of deposits or other financial guarantees to be \npaid or provided by the consumer at the request of the trader; \n \nn/a \n \nv. where applicable, the functionality, including applicable technical protection measures, of digital \ncontent;",
+    "source": "Information-Sheet2.pdf",
+    "page": 10,
+    "start": 1376
+  },
+  {
+    "text": "content; \n \nWe do not provide digital content, but we collect and retain the information that you input into our \nwebsite or otherwise communicate to us (for example by email or telephone), which may include \ncontact information (including your email address and telephon e number) and information relevant to \nyour enquiry or case. \n \nWe may share your data in accordance with the LMA and the Engagement Letter, which means we",
+    "source": "Information-Sheet2.pdf",
+    "page": 10,
+    "start": 1810
+  },
+  {
+    "text": "may, if we consider it to be necessary or helpful, share your data with the Committee, counsel, and other \nClaimants, as well as with other firms of solicitors with whom they may, with the approval of the \nCommittee, subsequently also cooperate. \n \nIf you provided us with an email address or mobile telephone number, we may send you emails or text \nmessages about your enquiry or case. \n \nWe will not sell, lease or otherwise distribute your personal information to third parties unless we have",
+    "source": "Information-Sheet2.pdf",
+    "page": 10,
+    "start": 2239
+  },
+  {
+    "text": "your permission or are required by law to do so. However, we may share information with third parties \nwhose services we use or whom we instruct on your behalf in connection with your case.",
+    "source": "Information-Sheet2.pdf",
+    "page": 10,
+    "start": 2736
+  },
+  {
+    "text": "Central Court 25 Southampton Buildings Holborn \nWC2A 1AL \nTelephone +44 (0)20 3150 1300 \ninfo@asserson.co.uk \nwww.asserson.co.uk \n7th Floor Melbourne House \n44-46 Aldwych WC2B 4LL\nTelephone +44 (0) 20 3995 3900\ninfo@harcusparker.co.uk\nwww.harcusparker.co.uk\nWe may disclose personal information if required to do so by law or if we believe such an action is \nnecessary to protect and defend the rights, property and personal safety of our firm and its website.",
+    "source": "Information-Sheet2.pdf",
+    "page": 11,
+    "start": 0
+  },
+  {
+    "text": "We may sometimes need to send your personal information to other countries, for example where our \nservice provider has a data centre overseas, but we will only do this where we are satisfied that your \ninformation will be adequately protected.  Your information may be accessed by law enforcement \nagencies and other authorities for regulatory reasons or for the prevention and detection of crime. \nWe will keep your information for as long as we need to for legitimate business purposes and for legal",
+    "source": "Information-Sheet2.pdf",
+    "page": 11,
+    "start": 462
+  },
+  {
+    "text": "and regulatory reasons. \nData that you provide to us via our online resources will also be governed by our contractors\u2019 privacy \npolicies. \nA copy of our privacy notice is attached to the Engagement Letter and can also be accessed by clicking \nhere. \nw. where applicable, any relevant compatibility of digital content with hardware and software that the\ntrader is aware of or can reasonably be expected to have been aware of; \nn/a",
+    "source": "Information-Sheet2.pdf",
+    "page": 11,
+    "start": 966
+  },
+  {
+    "text": "n/a \nx. where applicable, the possibility of having recourse to an out -of-court complaint and redress\nmechanism, to which the trader is subject, and the methods for having access to it. \nYour attention has been drawn to the fact that you may make complaints about Harcus Parker Limited \nto Damon Parker and about Asserson Law Offices to Trevor Asserson. \nIf you are not happy with the response you receive, you may apply to the Solicitors\u2019",
+    "source": "Information-Sheet2.pdf",
+    "page": 11,
+    "start": 1393
+  },
+  {
+    "text": "Regulation Authority (see: https://www.sra.org.uk/ for more information) or the Legal \nOmbudsman (see: www.legalombudsman.org.uk/ ). \nIf a dispute arises as to the terms of the Litigation Management  Agreement, it contains an arbitration \nprocedure. \nAny dispute as to the distribution of the claim proceeds will be dealt with by the Distribution \nArbitrator on the terms set out in the Litigation Management Agreement.",
+    "source": "Information-Sheet2.pdf",
+    "page": 11,
+    "start": 1835
+  }
+]

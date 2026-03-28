@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the main purpose of this document?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What are the key findings or conclusions?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "Who are the main stakeholders or authors mentioned?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What methodology or approach is described?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What specific data, numbers, or statistics are mentioned?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What recommendations or next steps are proposed?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What problem or challenge does this document address?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What time period or dates are referenced?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What tools, technologies, or systems are mentioned?",
+    "ground_truth": "Replace this with the actual expected answer based on your document content."
+  },
+  {
+    "question": "What topic is not covered in these documents?",
+    "ground_truth": "I could not find information about this in the provided documents."
+  }
+]
