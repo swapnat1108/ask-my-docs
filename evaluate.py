@@ -100,7 +100,7 @@ def evaluate_with_ragas(pipeline_data: dict) -> dict:
     """Score the results using Ragas metrics."""
     from datasets import Dataset
     from ragas import evaluate
-    from ragas.metrics import faithfulness, answer_relevancy, context_precision
+    from ragas.metrics import Faithfulness, AnswerRelevancy, ContextPrecision
 
     print("\n  Scoring with Ragas (this calls the LLM — takes ~2 min)...")
 
@@ -115,9 +115,9 @@ def evaluate_with_ragas(pipeline_data: dict) -> dict:
     result = evaluate(
         dataset,
         metrics=[
-            faithfulness,
-            answer_relevancy,
-            context_precision,
+            Faithfulness(),
+            AnswerRelevancy(),
+            ContextPrecision(),
         ],
     )
 
@@ -126,6 +126,7 @@ def evaluate_with_ragas(pipeline_data: dict) -> dict:
         "answer_relevancy":  float(result["answer_relevancy"]),
         "context_precision": float(result["context_precision"]),
     }
+```
     return scores
 
 
