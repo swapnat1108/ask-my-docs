@@ -54,9 +54,13 @@ def evaluate_with_ragas(pipeline_data):
     from ragas import evaluate
     from ragas.metrics import Faithfulness, AnswerRelevancy, ContextPrecision
     from ragas.llms import LangchainLLMWrapper
+    from ragas.embeddings import LangchainEmbeddingsWrapper
     from langchain_community.chat_models import ChatOpenAI
+    from langchain_huggingface import HuggingFaceEmbeddings
 
     groq_key = os.environ.get("GROQ_API_KEY", "")
+    os.environ["OPENAI_API_KEY"] = groq_key
+
     llm = ChatOpenAI(
         model="llama-3.3-70b-versatile",
         openai_api_key=groq_key,
@@ -64,13 +68,21 @@ def evaluate_with_ragas(pipeline_data):
     )
     ragas_llm = LangchainLLMWrapper(llm)
 
+    hf_embeddings = HuggingFaceEmbeddings(
+        model_name="BAAI/bge-small-en-v1.5",
+        model_kwargs={"device": "cpu"},
+        encode_kwargs={"normalize_embeddings": True},
+    )
+    ragas_embeddings = LangchainEmbeddingsWrapper(hf_embeddings)
+
     dataset = Dataset.from_dict(pipeline_data)
     result = evaluate(
         dataset,
         metrics=[Faithfulness(), AnswerRelevancy(), ContextPrecision()],
         llm=ragas_llm,
+        embeddings=ragas_embeddings,
     )
-    print("Raw result:", result)
+    print("Raw scores:", dict(result))
     return {
         "faithfulness": get_score(result, "faithfulness"),
         "answer_relevancy": get_score(result, "answer_relevancy"),
