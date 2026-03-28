@@ -1,42 +1,34 @@
 [
   {
-    "question": "What is the main purpose of this document?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
+    "question": "What is the University Fees Litigation about?",
+    "ground_truth": "It is about claims brought on behalf of current and former students of universities and higher education institutions regarding university fees."
   },
   {
-    "question": "What are the key findings or conclusions?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
+    "question": "Who are the law firms involved in this case?",
+    "ground_truth": "Harcus Parker Limited and Asserson Law Offices are proposing to act on a no-win, no-fee arrangement."
   },
   {
-    "question": "Who are the main stakeholders or authors mentioned?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
+    "question": "What is a DBA agreement?",
+    "ground_truth": "A damages-based agreement between the client and the Solicitors which includes the payment of expenses and fees."
   },
   {
-    "question": "What methodology or approach is described?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
+    "question": "What type of fee arrangement is being offered?",
+    "ground_truth": "A no-win, no-fee arrangement."
   },
   {
-    "question": "What specific data, numbers, or statistics are mentioned?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
-  },
-  {
-    "question": "What recommendations or next steps are proposed?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
-  },
-  {
-    "question": "What problem or challenge does this document address?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
-  },
-  {
-    "question": "What time period or dates are referenced?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
-  },
-  {
-    "question": "What tools, technologies, or systems are mentioned?",
-    "ground_truth": "Replace this with the actual expected answer based on your document content."
+    "question": "Who is this information sheet intended for?",
+    "ground_truth": "Current and former students of universities and other higher education institutions."
   },
   {
     "question": "What topic is not covered in these documents?",
     "ground_truth": "I could not find information about this in the provided documents."
   }
 ]
+```
+
+Save with `Cmd + S`, then push:
+```
+cd ~/Desktop/ask-my-docs
+git add eval_dataset.json
+git commit -m "add real eval questions"
+git push origin main
