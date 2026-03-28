@@ -42,16 +42,40 @@ def run_pipeline_on_dataset(dataset):
         ground_truths.append(gt)
     return {"question": questions, "answer": answers, "contexts": contexts, "ground_truth": ground_truths}
 
+def get_score(result, key):
+    val = result[key]
+    if isinstance(val, list):
+        valid = [v for v in val if v is not None]
+        return sum(valid) / len(valid) if valid else 0.0
+    return float(val)
+
 def evaluate_with_ragas(pipeline_data):
     from datasets import Dataset
     from ragas import evaluate
     from ragas.metrics import Faithfulness, AnswerRelevancy, ContextPrecision
-    os.environ["OPENAI_API_BASE"] = "https://api.groq.com/openai/v1"
-    os.environ["OPENAI_API_KEY"] = os.environ.get("GROQ_API_KEY", "")
-    os.environ["OPENAI_MODEL_NAME"] = "llama-3.3-70b-versatile"
+    from ragas.llms import LangchainLLMWrapper
+    from langchain_community.chat_models import ChatOpenAI
+
+    groq_key = os.environ.get("GROQ_API_KEY", "")
+    llm = ChatOpenAI(
+        model="llama-3.3-70b-versatile",
+        openai_api_key=groq_key,
+        openai_api_base="https://api.groq.com/openai/v1",
+    )
+    ragas_llm = LangchainLLMWrapper(llm)
+
     dataset = Dataset.from_dict(pipeline_data)
-    result = evaluate(dataset, metrics=[Faithfulness(), AnswerRelevancy(), ContextPrecision()])
-    return {"faithfulness": float(result["faithfulness"]), "answer_relevancy": float(result["answer_relevancy"]), "context_precision": float(result["context_precision"])}
+    result = evaluate(
+        dataset,
+        metrics=[Faithfulness(), AnswerRelevancy(), ContextPrecision()],
+        llm=ragas_llm,
+    )
+    print("Raw result:", result)
+    return {
+        "faithfulness": get_score(result, "faithfulness"),
+        "answer_relevancy": get_score(result, "answer_relevancy"),
+        "context_precision": get_score(result, "context_precision"),
+    }
 
 def main():
     print("=" * 55)
@@ -61,8 +85,13 @@ def main():
     print(f"  Found {len(dataset)} test cases")
     pipeline_data = run_pipeline_on_dataset(dataset)
     scores = evaluate_with_ragas(pipeline_data)
-    passed = (scores["faithfulness"] >= FAITHFULNESS_THRESHOLD and scores["answer_relevancy"] >= ANSWER_RELEVANCE_THRESHOLD and scores["context_precision"] >= CONTEXT_PRECISION_THRESHOLD)
+    passed = (
+        scores["faithfulness"] >= FAITHFULNESS_THRESHOLD
+        and scores["answer_relevancy"] >= ANSWER_RELEVANCE_THRESHOLD
+        and scores["context_precision"] >= CONTEXT_PRECISION_THRESHOLD
+    )
     print(scores)
+    print("PASSED" if passed else "FAILED")
     results = {"timestamp": datetime.now().isoformat(), "scores": scores, "passed": passed}
     with open(RESULTS_FILE, "w") as f:
         json.dump(results, f, indent=2)
