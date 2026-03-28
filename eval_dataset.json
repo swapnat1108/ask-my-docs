@@ -18,17 +18,5 @@
   {
     "question": "Who is this information sheet intended for?",
     "ground_truth": "Current and former students of universities and other higher education institutions."
-  },
-  {
-    "question": "What topic is not covered in these documents?",
-    "ground_truth": "I could not find information about this in the provided documents."
   }
 ]
-```
-
-Save with `Cmd + S`, then push:
-```
-cd ~/Desktop/ask-my-docs
-git add eval_dataset.json
-git commit -m "add real eval questions"
-git push origin main
