@@ -42,12 +42,13 @@ def run_pipeline_on_dataset(dataset):
         ground_truths.append(gt)
     return {"question": questions, "answer": answers, "contexts": contexts, "ground_truth": ground_truths}
 
-def get_score(result, key):
-    val = result[key]
-    if isinstance(val, list):
-        valid = [v for v in val if v is not None]
-        return sum(valid) / len(valid) if valid else 0.0
-    return float(val)
+def safe_mean(values):
+    if values is None:
+        return 0.0
+    if isinstance(values, (int, float)):
+        return float(values)
+    valid = [v for v in values if v is not None]
+    return sum(valid) / len(valid) if valid else 0.0
 
 def evaluate_with_ragas(pipeline_data):
     from datasets import Dataset
@@ -67,7 +68,6 @@ def evaluate_with_ragas(pipeline_data):
         openai_api_base="https://api.groq.com/openai/v1",
     )
     ragas_llm = LangchainLLMWrapper(llm)
-
     hf_embeddings = HuggingFaceEmbeddings(
         model_name="BAAI/bge-small-en-v1.5",
         model_kwargs={"device": "cpu"},
@@ -82,12 +82,15 @@ def evaluate_with_ragas(pipeline_data):
         llm=ragas_llm,
         embeddings=ragas_embeddings,
     )
-    print("Raw scores:", dict(result))
-    return {
-        "faithfulness": get_score(result, "faithfulness"),
-        "answer_relevancy": get_score(result, "answer_relevancy"),
-        "context_precision": get_score(result, "context_precision"),
+    df = result.to_pandas()
+    print("Scores dataframe:")
+    print(df[["faithfulness", "answer_relevancy", "context_precision"]].to_string())
+    scores = {
+        "faithfulness": safe_mean(df["faithfulness"].tolist()),
+        "answer_relevancy": safe_mean(df["answer_relevancy"].tolist()),
+        "context_precision": safe_mean(df["context_precision"].tolist()),
     }
+    return scores
 
 def main():
     print("=" * 55)
