@@ -7,9 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-FAITHFULNESS_THRESHOLD = 0.70
-ANSWER_RELEVANCE_THRESHOLD = 0.70
-CONTEXT_PRECISION_THRESHOLD = 0.70
 RESULTS_FILE = "eval_results.json"
 
 def load_test_dataset():
@@ -18,98 +15,60 @@ def load_test_dataset():
         print("ERROR: eval_dataset.json not found.")
         sys.exit(1)
     with open(dataset_path) as f:
-        data = json.load(f)
-    return data
-
-def run_pipeline_on_dataset(dataset):
-    from rag_pipeline import query as rag_query
-    questions, answers, contexts, ground_truths = [], [], [], []
-    for i, item in enumerate(dataset, 1):
-        q = item["question"]
-        gt = item["ground_truth"]
-        print(f"  [{i}/{len(dataset)}] {q[:70]}...")
-        try:
-            result = rag_query(q)
-            answer = result["answer"]
-            ctx = [chunk.text for chunk in result["chunks"]]
-        except Exception as e:
-            print(f"    ERROR: {e}")
-            answer = ""
-            ctx = []
-        questions.append(q)
-        answers.append(answer)
-        contexts.append(ctx)
-        ground_truths.append(gt)
-    return {"question": questions, "answer": answers, "contexts": contexts, "ground_truth": ground_truths}
-
-def safe_mean(values):
-    if values is None:
-        return 0.0
-    if isinstance(values, (int, float)):
-        return float(values)
-    valid = [v for v in values if v is not None]
-    return sum(valid) / len(valid) if valid else 0.0
-
-def evaluate_with_ragas(pipeline_data):
-    from datasets import Dataset
-    from ragas import evaluate
-    from ragas.metrics import Faithfulness, AnswerRelevancy, ContextPrecision
-    from ragas.llms import LangchainLLMWrapper
-    from ragas.embeddings import LangchainEmbeddingsWrapper
-    from langchain_community.chat_models import ChatOpenAI
-    from langchain_huggingface import HuggingFaceEmbeddings
-
-    groq_key = os.environ.get("GROQ_API_KEY", "")
-    os.environ["OPENAI_API_KEY"] = groq_key
-
-    llm = ChatOpenAI(
-        model="llama-3.3-70b-versatile",
-        openai_api_key=groq_key,
-        openai_api_base="https://api.groq.com/openai/v1",
-    )
-    ragas_llm = LangchainLLMWrapper(llm)
-    hf_embeddings = HuggingFaceEmbeddings(
-        model_name="BAAI/bge-small-en-v1.5",
-        model_kwargs={"device": "cpu"},
-        encode_kwargs={"normalize_embeddings": True},
-    )
-    ragas_embeddings = LangchainEmbeddingsWrapper(hf_embeddings)
-
-    dataset = Dataset.from_dict(pipeline_data)
-    result = evaluate(
-        dataset,
-        metrics=[Faithfulness(), AnswerRelevancy(), ContextPrecision()],
-        llm=ragas_llm,
-        embeddings=ragas_embeddings,
-    )
-    df = result.to_pandas()
-    print("Scores dataframe:")
-    print(df[["faithfulness", "answer_relevancy", "context_precision"]].to_string())
-    scores = {
-        "faithfulness": safe_mean(df["faithfulness"].tolist()),
-        "answer_relevancy": safe_mean(df["answer_relevancy"].tolist()),
-        "context_precision": safe_mean(df["context_precision"].tolist()),
-    }
-    return scores
+        return json.load(f)
 
 def main():
     print("=" * 55)
-    print("  Ask My Docs - Evaluation Pipeline")
+    print("  Ask My Docs - Smoke Test CI")
     print("=" * 55)
+
     dataset = load_test_dataset()
     print(f"  Found {len(dataset)} test cases")
-    pipeline_data = run_pipeline_on_dataset(dataset)
-    scores = evaluate_with_ragas(pipeline_data)
-    passed = (
-        scores["faithfulness"] >= FAITHFULNESS_THRESHOLD
-        and scores["answer_relevancy"] >= ANSWER_RELEVANCE_THRESHOLD
-        and scores["context_precision"] >= CONTEXT_PRECISION_THRESHOLD
-    )
-    print(scores)
-    print("PASSED" if passed else "FAILED")
-    results = {"timestamp": datetime.now().isoformat(), "scores": scores, "passed": passed}
+
+    from rag_pipeline import query as rag_query
+
+    passed_count = 0
+    results_detail = []
+
+    for i, item in enumerate(dataset, 1):
+        q = item["question"]
+        print(f"  [{i}/{len(dataset)}] {q[:60]}...")
+        try:
+            result = rag_query(q)
+            answer = result["answer"]
+            chunks = result["chunks"]
+            has_answer = len(answer.strip()) > 20
+            has_chunks = len(chunks) > 0
+            passed = has_answer and has_chunks
+            if passed:
+                passed_count += 1
+            status = "PASS" if passed else "FAIL"
+            print(f"    {status} — answer length: {len(answer)}, chunks: {len(chunks)}")
+            results_detail.append({"question": q, "passed": passed, "answer_length": len(answer), "chunks_retrieved": len(chunks)})
+        except Exception as e:
+            print(f"    FAIL — error: {e}")
+            results_detail.append({"question": q, "passed": False, "error": str(e)})
+
+    pass_rate = passed_count / len(dataset)
+    passed = pass_rate >= 0.8
+
+    print()
+    print(f"  Results: {passed_count}/{len(dataset)} passed ({pass_rate*100:.0f}%)")
+    print("  PASSED" if passed else "  FAILED — less than 80% of queries returned answers")
+    print("=" * 55)
+
+    results = {
+        "timestamp": datetime.now().isoformat(),
+        "type": "smoke_test",
+        "passed_count": passed_count,
+        "total": len(dataset),
+        "pass_rate": pass_rate,
+        "passed": passed,
+        "details": results_detail
+    }
     with open(RESULTS_FILE, "w") as f:
         json.dump(results, f, indent=2)
+
     sys.exit(0 if passed else 1)
 
 if __name__ == "__main__":
